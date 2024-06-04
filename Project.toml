@@ -1,7 +1,7 @@
 name = "BaseTrainingPlan"
 uuid = "040d1834-f38b-4f45-a436-19b9da0e3da9"
 authors = ["Jonathan Miller jonathan.miller@fieldofnodes.com"]
-version = "1.0.0-DEV"
+version = "1.0.0"
 
 [deps]
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
