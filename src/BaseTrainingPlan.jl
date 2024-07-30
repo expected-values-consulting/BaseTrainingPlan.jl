@@ -10,8 +10,8 @@ module BaseTrainingPlan
 
 
     function test_training_assessment_file(df::DataFrame)
-        @assert length(names(df)) == 3 "Number of columns is not as expected."
-        @assert names(df) == ["Skill", "Current_skills", "Desired_skill"] "Column names are not as expected."
+        @assert length(names(df)) == 4 "Number of columns is not as expected."
+        @assert names(df) == ["Number", "Skill", "Current_skills", "Desired_skill"] "Column names are not as expected."
         @assert all([i isa String for i in df.Skill]) "Not all values in Skill column are strings."
         @assert all([!isempty(i) for i in df.Skill]) "Skill desciprtion in Skill column is empty."
         @assert all([i isa Number for i in df.Current_skills]) "Not all values in Current_skills column are numbers."
